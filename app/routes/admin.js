@@ -20,8 +20,14 @@ export default Ember.Route.extend({
       this.transitionTo('admin');
     },
     delete(product){
-      if(confirm('Are you sure you want to delete this product?')){
-        product.destroyRecord();
+      if(confirm("Are you sure you want to delete this product, and all of it's reviews?")){
+        debugger;
+        var review_deletions = product.get('reviews').map(function(review){
+          return review.destroyRecord();
+        });
+        Ember.RSVP.all(review_deletions).then(function(){
+          return product.destroyRecord();
+        });
         this.transitionTo('admin');
       }
     }
