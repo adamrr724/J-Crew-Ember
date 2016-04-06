@@ -1,9 +1,13 @@
-.productTile {
-  border: 2px solid dodgerblue;
+.productList {
+  // border: 1px solid dodgerblue;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .productTile {
   display: flex;
+  flex-direction: column;
+  // border: 1px solid tomato;
   h3 {
     padding-left: 2%;
   }

@@ -5,7 +5,6 @@ export function totalPrice(cartItems) {
   var totalPrice = 0;
 
   items.forEach(function(item) {
-    console.log(item.get('price'));
     var price = parseInt(item.get('price'));
     totalPrice = price + totalPrice;
   });

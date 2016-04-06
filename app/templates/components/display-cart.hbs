@@ -2,8 +2,7 @@
 <ul>
   {{#each shoppingCart.items as |item|}}
     <li>{{item.name}} -- {{item.price}}</li>
+    <button {{action 'remove' item}}>Remove from Cart</button>
   {{/each}}
   <h5>Total Price: {{total-price shoppingCart.items}}</h5>
 </ul>
-
-{{log shoppingCart.items "display cart template"}}

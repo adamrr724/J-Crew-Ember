@@ -1,10 +1,14 @@
 <h1>Admin Page</h1>
 <hr>
-{{#each model as |product|}}
-  {{product-tile product=product}}
-  {{update-product product=product updateProduct="updateProduct"}}
-  <button {{action 'delete' product}}>Delete</button>
-{{/each}}
+<div class="productList">
+  {{#each model as |product|}}
+  <div class="adminProductTile">
+    {{product-tile product=product}}
+    {{update-product product=product updateProduct="updateProduct"}}
+    <button {{action 'delete' product}}>Delete</button>
+  </div>
+  {{/each}}
+</div>
 
 <hr>
 {{new-product product=model saveProduct="saveProduct"}}

@@ -1,12 +1,12 @@
 <div class="product">
-<h1>{{product.name}}</h1>
-<h3>${{product.price}}</h3>
-<h4>color: {{product.color}}</h4>
-<h4>size: {{product.size}}</h4>
-<img src="{{product.image}}" alt="" />
-<h4>Product Details:</h4>
-<p>
-  {{product.details}}
-</p>
-<button {{action 'addToCart' product}}>Add to Cart</button>
+  <h1>{{product.name}}</h1>
+  <h3>${{product.price}}</h3>
+  <h4>color: {{product.color}}</h4>
+  <h4>size: {{product.size}}</h4>
+  <img src="{{product.image}}" alt="" />
+  <h4>Product Details:</h4>
+  <p>
+    {{product.details}}
+  </p>
+  <button {{action 'addToCart' product}}>Add to Cart</button>
 </div>
