@@ -1,0 +1,16 @@
+.productTile {
+  border: 2px solid dodgerblue;
+}
+
+.productTile {
+  display: flex;
+  h3 {
+    padding-left: 2%;
+  }
+  .productImage {
+    width: 300px;
+    img {
+      width: 100%;
+    }
+  }
+}
