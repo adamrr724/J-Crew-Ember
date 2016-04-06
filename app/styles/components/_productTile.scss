@@ -1,13 +1,22 @@
+.adminProductTile {
+  // border: 2px solid green;
+  margin-bottom: 3%;
+}
+
 .productList {
-  // border: 1px solid dodgerblue;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .productTile {
+  border: 1px solid lightgrey;
+  margin-bottom: 25px;
+  .ember-view {
+    // border: 2px solid pink;
+  }
   display: flex;
   flex-direction: column;
-  // border: 1px solid tomato;
   h3 {
     padding-left: 2%;
   }

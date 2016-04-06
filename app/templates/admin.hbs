@@ -4,8 +4,10 @@
   {{#each model as |product|}}
   <div class="adminProductTile">
     {{product-tile product=product}}
+    <span class="editReviews">{{#link-to 'review' product.id}}Edit Reviews{{/link-to}} </span>
+    <br>
+    <br>
     {{update-product product=product updateProduct="updateProduct"}}
-    {{#link-to 'review' product.id}}Edit Reviews{{/link-to}}
     <button {{action 'delete' product}}>Delete</button>
   </div>
   {{/each}}
