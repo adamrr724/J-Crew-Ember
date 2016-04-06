@@ -16,6 +16,11 @@ body, html {
     justify-content: space-between;
     align-items: baseline;
   }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+  }
 }
 
 .productTile {
