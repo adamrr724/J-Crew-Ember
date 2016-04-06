@@ -7,5 +7,6 @@ export default DS.Model.extend({
   size: DS.attr(),
   type: DS.attr(),
   color: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  reviews: DS.hasMany('review', {async: true})
 });

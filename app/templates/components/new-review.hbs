@@ -1,0 +1,55 @@
+<div class="productForm">
+  <form>
+    <label for="username">Username: </label>
+    {{input value=username}}
+    <label for="rating">Rating: </label>
+    {{#x-select value=rating}}
+      {{#x-option value="1"}}1 Star{{/x-option}}
+      {{#x-option value="2"}}2 Stars{{/x-option}}
+      {{#x-option value="3"}}3 Stars{{/x-option}}
+      {{#x-option value="4"}}4 Stars{{/x-option}}
+      {{#x-option value="5"}}5 Stars{{/x-option}}
+    {{/x-select}}
+    <label for="content">Review: </label>
+    {{input value=content}}
+    <button {{action 'saveReview'}}>Post Review</button>
+  </form>
+</div>
+
+<!-- <div class="productForm">
+  <form>
+    <label for="name">Username: </label>
+    {{input value=name}}
+    <label for="rating">Rating: </label>
+    {{#x-select value=rating}}
+      {{#x-option value="1"}}
+        <i class="fa fa-star"></i>
+      {{/x-option}}
+      {{#x-option value="2"}}
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      {{/x-option}}
+      {{#x-option value="3"}}
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      {{/x-option}}
+      {{#x-option value="4"}}
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      {{/x-option}}
+      {{#x-option value="5"}}
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      {{/x-option}}
+    {{/x-select}}
+    <label for="content">Review: </label>
+    {{input value=content}}
+    <button {{action 'saveProduct' product}}>Post Review</button>
+  </form>
+</div> -->

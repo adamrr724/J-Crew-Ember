@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('admin');
   this.route('product', {path: '/product/:product_id'});
   this.route('cart');
+  this.route('review');
 });
 
 export default Router;
