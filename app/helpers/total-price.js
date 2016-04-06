@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export function totalPrice(cartItems) {
-  debugger;
+  var items = cartItems[0];
   var totalPrice = 0;
-  console.log(cartItems, "cart items")
-  cartItems.forEach(function(item) {
-    console.log(item.price, "hey");
-     var price = parseInt(item.price);
+
+  items.forEach(function(item) {
+    console.log(item.get('price'));
+    var price = parseInt(item.get('price'));
     totalPrice = price + totalPrice;
   });
   return totalPrice;
