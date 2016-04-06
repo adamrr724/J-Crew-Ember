@@ -1,0 +1,6 @@
+<h1>Admin Page</h1>
+{{new-product product=model saveProduct="saveProduct"}}
+{{log model}}
+{{#each model as |product|}}
+  {{product.name}}
+{{/each}}
