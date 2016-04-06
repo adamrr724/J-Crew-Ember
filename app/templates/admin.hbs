@@ -3,6 +3,7 @@
 {{#each model as |product|}}
   {{product-tile product=product}}
   {{update-product product=product updateProduct="updateProduct"}}
+  <button {{action 'delete' product}}>Delete</button>
 {{/each}}
 
 <hr>

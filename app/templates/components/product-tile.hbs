@@ -1,6 +1,8 @@
 <div class="productTile">
+  {{#link-to 'product' product.id}}
   <div class="productImage">
     <img src="{{product.image}}">
   </div>
   <h3>{{product.name}}</h3>
+  {{/link-to}}
 </div>
