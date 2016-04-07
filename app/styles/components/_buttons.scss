@@ -17,3 +17,30 @@
     }
   }
 }
+
+.fa-check {
+  color: lightgreen;
+  padding-right: 5px;
+}
+
+.fa-star {
+  color: khaki;
+  padding-right: 10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+button {
+  background-color: white;
+  padding: 1% 3%;
+  border: none;
+  border: 2px solid black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  transition: all 300ms linear;
+  &:hover {
+    cursor: pointer;
+    transition: all 300ms linear;
+    background-color: black;
+    color: white;
+  }
+}

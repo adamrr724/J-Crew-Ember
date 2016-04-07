@@ -3,8 +3,8 @@
 </div>
 <ul>
   {{#each shoppingCart.items as |item|}}
-    <li>{{item.name}} -- {{item.price}}</li>
-    <button {{action 'remove' item}}>Remove from Cart</button>
+    <li class="cartItem">{{item.name}} -- ${{item.price}}.00</li><br>
+    <button {{action 'remove' item}}>Remove from Cart</button><br>
   {{/each}}
   <p><strong>Total Price:</strong> ${{total-price shoppingCart.items}}.00</p>
 </ul>
