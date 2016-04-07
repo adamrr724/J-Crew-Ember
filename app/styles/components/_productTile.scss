@@ -55,6 +55,37 @@
   }
 }
 
-.cartItem {
-  margin-top: 20px;
+.cartNav {
+  width: 80%;
+  padding: 3% 0px;
+  display: flex;
+  justify-content: space-around;
+  .ember-view {
+    .cart-tally {
+      border: 2px solid black;
+      border-radius: 100%;
+      padding: 5px 10px 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.productForm {
+  // border: 2px solid tomato;
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 30px;
+      font-size: 12px;
+    }
+    label {
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+  }
+  button {
+    margin-top: 25px;
+  }
 }

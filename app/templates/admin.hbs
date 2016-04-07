@@ -7,7 +7,7 @@
     <span class="editReviews">{{#link-to 'review' product.id}}Edit Reviews{{/link-to}} </span>
     <br>
     <br>
-    {{update-product product=product updateProduct="updateProduct"}}
+    {{update-product product=product updateProduct="updateProduct"}}<br>
     <button {{action 'delete' product}}>Delete</button>
   </div>
   {{/each}}

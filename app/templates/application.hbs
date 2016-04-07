@@ -3,7 +3,9 @@
     <div class="container">
       {{#link-to 'index'}}<h1 class="logo">J.CREW</h1>{{/link-to}}
       <div class="navigation">
-        {{#link-to 'cart'}}Shopping Cart{{/link-to}}
+        <div class="cartNav">
+          {{cart-tally}}{{#link-to 'cart'}}Shopping Cart{{/link-to}}
+        </div>
         {{#link-to 'contact'}}Contact{{/link-to}}
       </div>
     </div>
