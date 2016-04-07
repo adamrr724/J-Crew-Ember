@@ -15,6 +15,14 @@ body::-webkit-scrollbar {
 body, html {
   margin: 0px;
   padding: 0px;
+  height: 100vh;
+}
+
+.pageWrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {

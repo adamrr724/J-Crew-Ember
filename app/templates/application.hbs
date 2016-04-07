@@ -1,13 +1,19 @@
-<div class="headerBar">
-  <div class="container">
-    {{#link-to 'index'}}<h1 class="logo">J.CREW</h1>{{/link-to}}
-    <div class="navigation">
-      {{#link-to 'cart'}}Shopping Cart{{/link-to}}
-      {{#link-to 'admin'}}Admin{{/link-to}}
-      {{#link-to 'contact'}}Contact{{/link-to}}
+<div class="pageWrap">
+  <div class="headerBar">
+    <div class="container">
+      {{#link-to 'index'}}<h1 class="logo">J.CREW</h1>{{/link-to}}
+      <div class="navigation">
+        {{#link-to 'cart'}}Shopping Cart{{/link-to}}
+        {{#link-to 'contact'}}Contact{{/link-to}}
+      </div>
     </div>
   </div>
-</div>
-<div class="container">
-  {{outlet}}
+  <div class="container">
+    {{outlet}}
+  </div>
+  <div class="footer">
+    <hr>
+    <p>Created by Adam Ross Russell &#38; Brooke Hurford | &copy; 2016</p>
+    {{#link-to 'admin'}}Admin Console{{/link-to}}
+  </div>
 </div>
