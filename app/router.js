@@ -14,6 +14,11 @@ Router.map(function() {
   this.route('shoes');
   this.route('coats');
   this.route('pants');
+  this.route('contact', function() {
+    this.route('phone');
+    this.route('address');
+    this.route('email');
+  });
 });
 
 export default Router;

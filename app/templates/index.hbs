@@ -1,8 +1,9 @@
-{{#link-to 'shirt'}}Shirts{{/link-to}}
-{{#link-to 'coats'}}Coats{{/link-to}}
-{{#link-to 'pants'}}Pants{{/link-to}}
-{{#link-to 'shoes'}}Shoes{{/link-to}}
-<hr>
+<div class="typeNav">
+  {{#link-to 'shirt'}}Shirts{{/link-to}}
+  {{#link-to 'coats'}}Coats{{/link-to}}
+  {{#link-to 'pants'}}Pants{{/link-to}}
+  {{#link-to 'shoes'}}Shoes{{/link-to}}
+</div>
 <div class="productList">
   {{#each model as |product|}}
   {{product-tile product=product}}
