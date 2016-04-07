@@ -21,7 +21,6 @@ export default Ember.Route.extend({
     },
     delete(product){
       if(confirm("Are you sure you want to delete this product, and all of it's reviews?")){
-        debugger;
         var review_deletions = product.get('reviews').map(function(review){
           return review.destroyRecord();
         });

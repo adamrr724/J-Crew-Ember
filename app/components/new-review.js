@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         content: this.get('content') ? this.get('content') : " ",
         product: this.get('product'),
       };
-      this.sendAction('saveReview', params)
+      this.sendAction('saveReview', params);
     }
   }
 });
